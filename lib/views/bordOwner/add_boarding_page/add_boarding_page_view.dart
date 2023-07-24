@@ -170,6 +170,7 @@ class _AddBoardingPageViewState extends State<AddBoardingPageView> {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     CustomLineTextField(
+                      maxLength: 20,
                       type: 'text',
                       textEditingController:
                           bloc.boardingNameTextEditingController,
@@ -241,6 +242,7 @@ class _AddBoardingPageViewState extends State<AddBoardingPageView> {
                       height: 15.0,
                     ),
                     CustomLineTextField(
+                      maxLength: 20,
                       type: 'text',
                       textEditingController: bloc.cityTextEditingController,
                       title: 'City',
@@ -249,6 +251,7 @@ class _AddBoardingPageViewState extends State<AddBoardingPageView> {
                       height: 20.0,
                     ),
                     CustomLineTextField(
+                      maxLength: 10,
                       type: 'number',
                       textEditingController: bloc.mobileTextEditingController,
                       title: 'Mobile',
@@ -339,6 +342,7 @@ class _AddBoardingPageViewState extends State<AddBoardingPageView> {
                         ),
                         Expanded(
                           child: CustomLineTextField(
+                            maxLength: 8,
                             type: 'number',
                             textEditingController:
                                 bloc.priceTextEditingController,
@@ -351,6 +355,7 @@ class _AddBoardingPageViewState extends State<AddBoardingPageView> {
                       height: 20.0,
                     ),
                     CustomLineTextField(
+                      maxLength: 200,
                       type: 'text',
                       textEditingController:
                           bloc.descriptionTextEditingController,
